@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEP</title>
+  <link rel="stylesheet" href="/css/Style.css">
+</head>
+
+<body>
+    <!-- =============== Navegacion ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        <span class="icon">
+                            <ion-icon name="medkit-outline"></ion-icon>
+                        </span>
+                        <span class="title">FEP</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/view/appointments.html">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="title">Citas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/view/person.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Paciente</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/view/Doctors.html">
+                        <span class="icon">
+                            <ion-icon name="medical-outline"></ion-icon>
+                        </span>
+                        <span class="title">Doctores</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="user">
+                    <img src="/assets/imgs/Person.jpg" alt="">
+                </div>
+            </div>
+ <!-- ================ Listas de citas  ================= -->
+ <div class="details">
+    <div class="recentOrders">
+        <div class="cardHeader">
+            <h2>Registro de citas</h2>
+   
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Nombre del paciente</td>
+                    <td>Nombre del doctor</td>
+                    <td>Fecha</td>
+                    <td>Hora</td>
+                    <td>Status</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+
+            <tbody id="appointmentsTableBody">
+                <!-- Aquí se agregarán dinámicamente las filas de citas -->
+            </tbody>
+        </table>
+    </div>
+<!-- ================ Formulario de citas ================= -->
+<div class="details">
+    <div class="appointmentForm">
+        <div class="cardHeader">
+            <h2>Formulario de citas</h2>
+        </div>
+        <form id="appointmentForm" action="/appointments" method="post">
+            <div class="formGroup">
+                <label for="patientName">Nombre del paciente:</label>
+                <input type="text" id="patientName" name="patientName" required>
+            </div>
+            <div class="formGroup">
+                <label for="appointmentDate">Fecha:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+            </div>
+            <div class="formGroup">
+                <label for="appointmentTime">Hora:</label>
+                <input type="time" id="appointmentTime" name="appointmentTime" required>
+            </div>
+            <div class="formGroup">
+                <label for="doctorName">Nombre del doctor:</label>
+                <input type="text" id="doctorName" name="doctorName" required>
+            </div>
+            <div class="formGroup">
+                <label for="status">Status:</label>
+                <select id="status" name="status" required>
+                    <option value="confirmed">Confirmed</option>
+                    <option value="pending">Pending</option>
+                    <option value="cancelled">Cancelled</option>
+                    <option value="inProgress">In Progress</option>
+                </select>
+            </div>
+            <div class="formGroup">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+        
+    </div>
+</div>
+ 
+    <!-- =========== Scripts =========  -->
+    <script src="/appo.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Appointment Dashboard</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="/css/Style.css">
+</head>
+
+<body>
+    <!-- =============== Navegacion ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        <span class="icon">
+                            <ion-icon name="medkit-outline"></ion-icon>
+                        </span>
+                        <span class="title">FEP</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/view/appointments.html">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="title">Citas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/view/person.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Paciente</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/view/doctors.html">
+                        <span class="icon">
+                            <ion-icon name="medical-outline"></ion-icon>
+                        </span>
+                        <span class="title">Doctores</span>
+                    </a>
+                </li>
+              
+            </ul>
+        </div>
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                
+                <div class="user">
+                    <img src="/assets/imgs/Person.jpg" alt="">
+                </div>
+            </div>
+            <!-- ======================= Cartas ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="cardName">Doctores</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="cardName">Citas</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="cardName">Pacientes</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <!-- ================ Lista de deatalles de las citas ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Citas recientes</h2>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nombre del paciente</td>
+                                <td>Fecha</td>
+                                <td>Hora</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>María Martínez</td>
+                                <td>2024-11-18</td>
+                                <td>10:30 AM</td>
+                                <td><span class="status confirmed">Confirmada</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>2024-11-19</td>
+                                <td>12:00 PM</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Ana García</td>
+                                <td>2024-11-20</td>
+                                <td>02:00 PM</td>
+                                <td><span class="status cancelled">Cancelada</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>José Rodríguez</td>
+                                <td>2024-11-21</td>
+                                <td>11:00 AM</td>
+                                <td><span class="status confirmed">Confirmada</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ================= New Patients ================ -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Pacientes principales</h2>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/person.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Ana García<br> <span>Nuevo Arroyo Hondo</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/person.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>María Martínez<br> <span>Simón Bolívar</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/person.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Juan Pérez<br> <span>Villa Consuelo</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="assets/imgs/person.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>José Rodríguez<br> <span>Cristo Rey</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =========== Scripts =========  -->
+    <script src="/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Appointment Dashboard</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="/css/Style.css">
+</head>
+
+<body>
+    <!-- =============== Navegacion ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        <span class="icon">
+                            <ion-icon name="medkit-outline"></ion-icon>
+                        </span>
+                        <span class="title">FEP</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/view/appointments.html">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="title">Citas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/view/person.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Paciente</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/view/Doctors.html">
+                        <span class="icon">
+                            <ion-icon name="medical-outline"></ion-icon>
+                        </span>
+                        <span class="title">Doctores</span>
+                    </a>
+                </li>
+              
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+              
+                <div class="user">
+                    <img src="/assets/imgs/person.jpg" alt="">
+                </div>
+            </div>
+
+            <form id="createDoctor" class="appointmentForm">
+                <div class="cardHeader">
+                    <h2>Registro de doctores</h2>
+                </div>
+                <div class="formGroup">
+                    <label for="name">Nombre del doctor:</label>
+                    <input type="text" id="name" placeholder="Nombre del doctor">
+                </div>
+                <div class="formGroup">
+                    <label for="specialty">Especialidad:</label>
+                    <input type="text" id="specialty" placeholder="Especialidad del doctor">
+                </div>
+                <div class="formGroup">
+                    <label for="phone">Teléfono:</label>
+                    <input type="number" id="phone" placeholder="Teléfono del doctor">
+                </div>
+                <div class="formGroup">
+                    <button type="submit">Añadir doctor</button>
+                </div>
+            </form>
+            
+            <div class="cardBox" id="doctorCards">
+                <!-- Cards will be generated here -->
+            </div>
+            
+    </div>
+
+    <script src="/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
